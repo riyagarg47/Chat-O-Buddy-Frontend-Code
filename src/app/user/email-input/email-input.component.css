@@ -1,0 +1,13 @@
+.bg{
+    background-image: url("../../../assets/back1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    min-height: 100vh;
+    background-position: center;  
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

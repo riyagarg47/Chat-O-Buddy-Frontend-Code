@@ -1,0 +1,72 @@
+<div class="bg">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="/">Chat-O-Buddy</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="btn btn-light" href="/sign-up">Sign up<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!--form begins-->
+<div class="container" style="padding:4%">
+  <div class="row">
+    <!--Animation effects-->
+  <div class="col-md-6">
+    <div class="main-text1">C</div>
+    <div class="text1">H</div>
+    <div class="text1">A</div>
+    <div class="text1">T</div>
+
+    <div class="text3">O</div>
+
+    <div class="main-text2">B</div>
+    <div class="text2">U</div>
+    <div class="text2">D</div>
+    <div class="text2">D</div>
+    <div class="text2">Y</div>
+  </div>
+
+  <!--form-->
+  <div class="col-md-5" style="background: none; color: white;">
+    <h3>Login</h3>
+<form #signInForm="ngForm" (ngSubmit)="signInFunction()">
+  <div class="form-group">
+    <label for="inputEmail">Email</label>
+    <input type="email" class="form-control" id="inputEmail" name="email" [(ngModel)]="email" placeholder="xyz@example.com" required>
+  </div>
+  <div class="form-group">
+      <label for="inputPassword">Password</label>
+      <input type="password" class="form-control" name="password" [(ngModel)]="password" id="inputPassword" required>
+  </div>
+  <div class="form-row">
+      <div class="col-md-4">
+      <span><a href="/sign-up">New User? Signup</a></span>
+      </div>
+      <div class="col-md-6">
+        <span><a href="/emailVerification" style="float:right">Forgot Password?</a></span>
+        </div>
+      <div class="col-md-2">
+        <button type="submit" class="btn btn-primary" [disabled]="!signInForm.form.valid" style="float:right">Login</button>
+      </div>
+    </div>
+</form>
+</div>
+<div class="col-md-1"></div>
+</div>
+</div>
+
+<!--footer-->
+<footer class="footer">
+  <div class="container-fluid text-center" style="background-color: black; padding:0.7%">
+      <span style="color: white">Copyright&copy; 2018 Chat-O-Buddy.</span>
+  </div>
+</footer>
+
+</div>
